@@ -1,0 +1,9 @@
+{
+    "name": "PostgreSQL",
+    "probe": "\\x00\\x00\\x00\\x08\\x04\\xd2\\x16\\x2f",
+    "ports": [5432],
+    "patterns": [
+        {"regex": ".*", "service": "PostgreSQL"}
+    ]
+}
+

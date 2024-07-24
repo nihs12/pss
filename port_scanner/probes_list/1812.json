@@ -1,0 +1,9 @@
+{
+    "name": "RADIUS",
+    "probe": "\\x01\\x01\\x00\\x14\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00",
+    "ports": [1812],
+    "patterns": [
+        {"regex": ".*", "service": "RADIUS"}
+    ]
+}
+

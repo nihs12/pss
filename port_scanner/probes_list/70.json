@@ -1,0 +1,9 @@
+{
+    "name": "Gopher",
+    "probe": "\\r\\n",
+    "ports": [70],
+    "patterns": [
+        {"regex": ".*", "service": "Gopher server"}
+    ]
+}
+

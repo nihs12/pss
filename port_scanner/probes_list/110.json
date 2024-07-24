@@ -1,0 +1,9 @@
+{
+    "name": "POP3",
+    "probe": "USER test\\r\\n",
+    "ports": [110],
+    "patterns": [
+        {"regex": "^\\+OK", "service": "POP3 server"}
+    ]
+}
+

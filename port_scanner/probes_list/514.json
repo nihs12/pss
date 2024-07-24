@@ -1,0 +1,9 @@
+{
+    "name": "Syslog",
+    "probe": "<34>1 2019-02-28T18:00:00.000Z test test - - - test",
+    "ports": [514],
+    "patterns": [
+        {"regex": ".*", "service": "Syslog server"}
+    ]
+}
+

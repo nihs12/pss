@@ -1,0 +1,11 @@
+{
+    "name": "HTTP GetRequest",
+    "probe": "GET / HTTP/1.0\\r\\n\\r\\n",
+    "ports": [80],
+    "patterns": [
+        {"regex": "^HTTP/1\\.[01] \\d{3} .*", "service": "HTTP server"},
+        {"regex": "^HTTP/1\\.[01] \\d{3} .*Apache", "service": "Apache HTTP server"},
+        {"regex": "^HTTP/1\\.[01] \\d{3} .*nginx", "service": "nginx HTTP server"}
+    ]
+}
+

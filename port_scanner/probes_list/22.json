@@ -1,0 +1,9 @@
+{
+    "name": "SSH Banner",
+    "probe": "\\r\\n",
+    "ports": [22],
+    "patterns": [
+        {"regex": "^SSH-", "service": "SSH server"}
+    ]
+}
+

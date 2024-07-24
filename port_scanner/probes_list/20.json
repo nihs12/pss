@@ -1,0 +1,9 @@
+{
+    "name": "FTP Data",
+    "probe": "\\r\\n",
+    "ports": [20],
+    "patterns": [
+        {"regex": ".*", "service": "FTP Data"}
+    ]
+}
+

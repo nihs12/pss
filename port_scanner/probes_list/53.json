@@ -1,0 +1,9 @@
+{
+    "name": "DNS Version Request",
+    "probe": "\\x03\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00",
+    "ports": [53],
+    "patterns": [
+        {"regex": ".*", "service": "DNS server"}
+    ]
+}
+

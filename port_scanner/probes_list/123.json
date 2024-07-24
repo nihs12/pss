@@ -1,0 +1,9 @@
+{
+    "name": "NTP",
+    "probe": "\\xe3\\x00\\x03\\xfa\\x00\\x01\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00",
+    "ports": [123],
+    "patterns": [
+        {"regex": ".*", "service": "NTP server"}
+    ]
+}
+

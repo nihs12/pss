@@ -1,0 +1,9 @@
+{
+    "name": "FTP Control",
+    "probe": "USER anonymous\\r\\nPASS anonymous\\r\\n",
+    "ports": [21],
+    "patterns": [
+        {"regex": "^220.*FTP", "service": "FTP server"}
+    ]
+}
+

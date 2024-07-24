@@ -1,0 +1,9 @@
+{
+    "name": "SMTP GetRequest",
+    "probe": "HELO {{target}}\\r\\n",
+    "ports": [25],
+    "patterns": [
+        {"regex": "^220.*SMTP", "service": "SMTP server"}
+    ]
+}
+

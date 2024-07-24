@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scan Results</title>
+</head>
+<body>
+    <h1>Scan Results for {{ target }}</h1>
+    <table border="1">
+        <tr>
+            <th>Port</th>
+            <th>Service</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result.port }}</td>
+            <td>{{ result.service }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">New Scan</a>
+</body>
+</html>
+

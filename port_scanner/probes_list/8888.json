@@ -1,0 +1,9 @@
+{
+    "name": "HTTP Alternate",
+    "probe": "GET / HTTP/1.1\\r\\nHost: example.com\\r\\n\\r\\n",
+    "ports": [8888],
+    "patterns": [
+        {"regex": "^HTTP/1\\.[01] \\d{3} .*", "service": "HTTP server"}
+    ]
+}
+

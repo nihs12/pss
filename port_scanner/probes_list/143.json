@@ -1,0 +1,9 @@
+{
+    "name": "IMAP",
+    "probe": "A001 LOGIN test test\\r\\n",
+    "ports": [143],
+    "patterns": [
+        {"regex": "^\\* OK", "service": "IMAP server"}
+    ]
+}
+

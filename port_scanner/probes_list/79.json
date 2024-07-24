@@ -1,0 +1,9 @@
+{
+    "name": "Finger",
+    "probe": "\\r\\n",
+    "ports": [79],
+    "patterns": [
+        {"regex": ".*", "service": "Finger server"}
+    ]
+}
+

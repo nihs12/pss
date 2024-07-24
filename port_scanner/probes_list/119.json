@@ -1,0 +1,9 @@
+{
+    "name": "NNTP",
+    "probe": "HEAD / HTTP/1.0\\r\\n\\r\\n",
+    "ports": [119],
+    "patterns": [
+        {"regex": "^\\d{3}", "service": "NNTP server"}
+    ]
+}
+

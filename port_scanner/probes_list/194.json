@@ -1,0 +1,9 @@
+{
+    "name": "IRC",
+    "probe": "NICK test\\r\\nUSER test 0 * :realname\\r\\n",
+    "ports": [194],
+    "patterns": [
+        {"regex": "^:[^ ]+ 001", "service": "IRC server"}
+    ]
+}
+

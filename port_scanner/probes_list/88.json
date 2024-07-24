@@ -1,0 +1,9 @@
+{
+    "name": "Kerberos",
+    "probe": "\\x06\\x00\\xff\\xff\\xff\\xff\\x00\\x00\\x00\\x00",
+    "ports": [88],
+    "patterns": [
+        {"regex": "^\\x05\\x00", "service": "Kerberos"}
+    ]
+}
+
